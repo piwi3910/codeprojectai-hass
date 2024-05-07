@@ -2,7 +2,7 @@ name: Codeproject AI - NVIDIA GPU
 version: cuda12_2-2.6.2
 panel_icon: "mdi:robot"
 panel_title: CPAI
-slug: codeprojectai
+slug: codeprojectai-cuda
 description: realtime local object detection for IP cameras
 url: "https://github.com/piwi3910/codeprojectai-hass"
 image: codeproject/ai-server
