@@ -1,0 +1,48 @@
+name: Codeproject AI
+version: 0.0.1
+panel_icon: "mdi:robot"
+panel_title: CPAI
+slug: codeprojectai
+description: realtime local object detection for IP cameras
+url: "https://github.com/piwi3910/codeprojectai-hass"
+image: codeproject/ai-server:cpu-2.6.1
+startup: application
+boot: auto
+init: false
+webui: "http://[HOST]:[PORT:32168]/"
+watchdog: "http://[HOST]:[PORT:32168]/"
+ingress: true
+ingress_port: 32168
+ingress_entry: /
+panel_admin: false
+homeassistant_api: true
+hassio_api: true
+ports:
+  32168/tcp: 32168
+ports_description:
+  32168/tcp: Codeproject AI web port
+host_network: false
+devices:
+  - /dev/dri/renderD128
+  - /dev/apex_0
+  - /dev/apex_1
+  - /dev/apex_2
+  - /dev/apex_3
+  - /dev/dri/card0
+  - /dev/vchiq
+  - /dev/video10
+  - /dev/video0
+usb: true
+video: true
+tmpfs: true
+full_access: false
+privileged:
+  - PERFMON
+environment:
+schema:
+services:
+arch:
+  - amd64
+map:
+  - "media:rw"
+  - "config:rw"
