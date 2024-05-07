@@ -22,7 +22,7 @@ ports:
   32168/udp: 32168
 ports_description:
   32168/tcp: Codeproject AI web port
-  32168/tcp: Codeproject AI mesh port
+  32168/udp: Codeproject AI mesh port
 host_network: false
 devices:
   - /dev/dri/renderD128
