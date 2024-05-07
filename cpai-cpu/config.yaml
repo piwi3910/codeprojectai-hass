@@ -38,9 +38,6 @@ tmpfs: true
 full_access: false
 privileged:
   - PERFMON
-environment:
-schema:
-services:
 arch:
   - amd64
 map:
