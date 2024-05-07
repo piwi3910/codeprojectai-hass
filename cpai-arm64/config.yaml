@@ -1,11 +1,11 @@
 name: Codeproject AI
-version: 0.0.1
+version: arm64
 panel_icon: "mdi:robot"
 panel_title: CPAI
 slug: codeprojectai
 description: realtime local object detection for IP cameras
 url: "https://github.com/piwi3910/codeprojectai-hass"
-image: codeproject/ai-server:arm64
+image: codeproject/ai-server
 startup: application
 boot: auto
 init: false

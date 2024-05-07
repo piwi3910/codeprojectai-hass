@@ -13,3 +13,5 @@ Or, in your Home Assistant, navigate to _Configuration_ > _Add-ons, Backups & Su
 - [CodeProject AI (cpu X86)](cpai-cpu/README.md)
 - [CodeProject AI (RPI64)](cpai-rpi64/README.md)
 - [CodeProject AI (ARM64)](cpai-arm64/README.md)
+
+realtime local object detection for IP cameras
