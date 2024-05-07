@@ -18,9 +18,11 @@ panel_admin: false
 homeassistant_api: true
 hassio_api: true
 ports:
-  32168/tcp: 32168
+  - 32168/tcp: 32168
+  - 32168/udp: 32168
 ports_description:
-  32168/tcp: Codeproject AI web port
+  - 32168/tcp: Codeproject AI web port
+  - 32168/tcp: Codeproject AI mesh port
 host_network: false
 devices:
   - /dev/dri/renderD128
